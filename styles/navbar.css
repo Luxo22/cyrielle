@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;/*Temporaire*/
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+nav.navbar {
+    padding: 1em;
+    top : 0px;
+    position: fixed;
+    width: 100%;
+    background-color: #283d6d;
+    border-radius: 0;
+    box-shadow: #111 1px 1px 1px;
+}
+nav.navbar .navbar-container {
+    width: 100%;
+    margin : 0 auto;
+    display: flex;
+    padding : 1em 0;
+    justify-content: space-evenly;
+}
+nav.navbar a {
+    padding: 1em;
+    text-decoration: none;
+    color: #ffffff;
+}
+nav.navbar a:hover, .active {
+    background-color: rgba(17, 17, 17, 0.405);
+    border-radius: 0.3rem;
+}
+nav.navbar a.modal_open {
+    cursor: pointer;
+}
+button.openNav,.closeNav, .navBtn {
+    display: none;
+}
+@media (max-width: 680px) {
+    .navBtn {
+        display: block;
+        background-color: #283d6d;
+        min-width : 100vw;
+        position: fixed;
+        top : 0;
+    }
+        button.openNav {
+        display: block;
+        background-color: #283d6d;
+        padding : 1em;
+        font-weight: bolder;
+        border: 1px solid transparent;
+        font-size: x-large;
+        color : #fff;
+        cursor: pointer;
+        z-index : 0.5;
+    }
+    .mobile-view button:hover nav.navbar {
+        background-color: #111;
+    }
+    nav.navbar {
+        left: -41%;
+        max-width : 40%;
+        min-height: 100%;
+        transition: .3s ease;
+    }
+    nav.navbar .navbar-container {
+        flex-direction: column;
+    }
+    nav.navbar .navbar-container a {
+        display: block;
+        margin-top : 0.5em
+    }
+    .activeNav {
+        left: 0%!important;
+    }
+    .isActiveNav {
+        display: block!important;
+    }
+    .closeNav {
+        display: block;
+        width : fit-content;
+        background-color: transparent;
+        border: none;
+        font-size: 3rem;
+        color :rgba(17, 17, 17, 0.405);
+        transition : .2s ease;
+        cursor: pointer;
+    }.closeNav:hover {
+        color :rgba(17, 17, 17, 1)
+    }
+}

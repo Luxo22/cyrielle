@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/contact_page_style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <script  src="script/Cart.js"></script>
+    <script src="script/navbar_maker.js" defer></script>
+    <script src="script/modal.js" defer></script>
+    <script src="script/cart_manager.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <img src="images/fond3.webp" class="fond">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Contactez nous</h1>
+                </div>
+    
+                <div class="form-content">
+                    <form>
+                        <input type="email" name="email" id="email" class="form-input" placeholder="Votre email">
+                        <textarea name="message" id="messahe" cols="30" rows="10" class="form-input" placeholder="Votre message"></textarea>
+
+                        <button class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+    <script>
+        const btnStyle = document.querySelector('.btn')
+        btnStyle.addEventListener('mouseover', (e)=> {
+            btnStyle.classList.toggle('active')
+            console.log("Hey")
+        })
+    </script>
+</body>
+</html>

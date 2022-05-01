@@ -1,0 +1,12 @@
+.container {
+    margin-top : 150px!important;
+    padding: 1em;
+    display: block;
+    margin: auto;
+    background-color: #222;
+    place-self: center;
+    max-width: 60%;
+    color : #fff;
+    font-weight: bold;
+    transition: .3s;
+}

@@ -1,0 +1,87 @@
+img.fond {
+    width: 100%;
+    position: absolute;
+ }
+ .content {
+     position: relative;
+ }
+.container {
+    width : 80%;
+    position: absolute;
+    max-width : 80%;
+    left : 10%;
+    top : 100px;
+    display: grid;
+    place-items: center;
+}
+.container .form-container {
+    color : #fff;
+    background-color: #283d6da8;
+    width : 70%;
+    padding : 1em;
+    border-radius: .2rem;
+    box-shadow: rgba(34, 34, 34, 0.043) 1px 2px 10px 5px;
+}
+.container .form-container .form-header{
+    padding : 1em;
+    text-align: center;
+}
+.container .form-container .form-header::after {
+    content: "";
+    display: block;
+    height : 1px;
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+.container .form-container .form-content form {
+    padding : 1em;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin : 0 auto;
+}
+
+.container .form-container .form-content form .form-input {
+    padding : 1rem;
+    margin : 1em;
+    font-size: 1rem;
+    background-color: inherit;
+    border : 1px solid #fff;
+    color : #fff;
+    transition: .3s;
+}
+.container .form-container .form-content form .form-input::placeholder {
+    color : #ccc;
+}
+.container .form-container .form-content form .form-input:focus {
+    outline: none;
+    transform: scale(1.01);
+}
+.container .form-container .form-content form textarea {
+    resize: vertical;
+    min-height : 200px;
+}
+.btn {
+    cursor: pointer;
+    width : 50%;
+    border : 1px solid white;
+    color : white;
+    font-size: 1rem;
+    margin : 1em;
+    padding : 1em;
+    background-color: inherit;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1) ;
+}
+.btn:hover {
+    box-shadow: rgba(238, 238, 238, 0.154) 0px 0px 5px 4px;
+}
+
+@media (max-width : 950px) {
+    .form-container {
+        width : 100%;
+    }
+    .container {
+        width : 90%;
+    }
+}

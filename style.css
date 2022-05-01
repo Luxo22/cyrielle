@@ -1,0 +1,137 @@
+header {
+    display: grid;
+    place-items: center;
+}
+header img.fond {
+   width: 100%;
+}
+header .logo-container {
+    display: grid;
+    position: absolute;
+    place-content: center;
+}
+header .logo-container .logo {
+    width : 200px;
+    height: 200px;
+}
+/* nav.navbar {
+    
+    position: relative;
+    background-color: dodgerblue;
+    padding : 2em;
+} */
+
+
+/*Section style*/
+.welcome, .contact {
+    height : auto;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: xx-large;
+    padding : 2em 10rem;
+}
+
+.red {
+    color : crimson
+}
+.blue {
+    color: #283d6d;
+}
+.green {
+    color : seagreen
+}
+.contact {
+    background-color: #eee;
+}
+/*End section style*/
+
+/*Section welcome style*/
+.welcome .container {
+    width : 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.welcome .container .item {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: min-content;
+    
+}
+.welcome .container .item .item-picture {
+    border-radius: 100%;
+    width : 300px;
+    height : 250px;
+    
+}
+
+.welcome .container .item:last-child {
+    margin-left: 2em;
+}
+/*Section contact style*/
+.contact .container {
+    max-width: 90%;
+    margin : auto;
+}
+div.contact-form {
+    float: left;
+    width : 45%;
+    max-width: 45%;
+    padding : 2em;
+    background-color: #fff;
+    border-radius: 0.1rem;
+}
+div.contact-form form input {
+    display: block;
+    margin: 1em 0;
+    width: 100%;
+    padding: 1em;
+}
+div.contact-form form input[type="submit"] {
+    background-color: inherit;
+    border : 1px solid #283d6d;
+    transition: .3s ease;
+    font-weight: bold;
+}
+div.contact-form form input[type="submit"]:hover {
+    background-color: #283d6d;
+    color : #fff;
+    cursor: pointer;
+}
+div.map {
+    float: right;
+}
+
+
+@media (max-width: 1000px) {
+    .welcome .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1270px) {
+    div.contact-form, div.map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin : 1em 0;
+        max-width : 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+    div.map {
+        display: none;
+    }
+    .red, .blue, .green {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

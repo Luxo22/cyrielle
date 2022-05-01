@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles/menu_page_style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <script  src="script/Cart.js"></script>
+    <script src="script/navbar_maker.js" defer></script>
+    <script src="script/modal.js" defer></script>
+    <script src="script/cart_manager.js" defer></script>
+</head>
+<body>
+    
+
+    <br>
+    <br>
+    <br><br>
+        <section>
+            <h1>Nos menus</h1>
+<div class="containerMenu">
+            <div class="menu">
+                <img src="images/st_jacques.jpg" alt="" srcset="">
+                <div class="content">
+                    <h3>Menu St Jacques</h3>
+                    <p>Un menu d'exception préparé par notre chef, mélangeant à la fois océan et campagne. <span class="menu_content">Nous vous proposons un assortiment de st jacques revenues à la poêle accompagné de basilic et d'une sauce au caramel.</span></p>
+                    <a href="#commanderS">Commander</a>
+                </div>
+               </div>
+
+            <div class="rightMenu">
+                <img src="images/dos_de_lieu_jaune_asperge_quinoa_souffle.jpg" alt="" srcset="">
+                <div class="content">
+                        <h3>Menu poisson et asperge</h3>
+                        <p>Un menu simple mais toutefois succulent.<span class="menu_content">Nous vous proposons ici un dos de lieu jaune accompagné d'asperge grillées et de quinoa soufflé.</span></p>
+                        <a href="#commanderP">Commander</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <img src="images/cepes_foie_gars.jpg" alt="" srcset="">
+                <div class="content">
+                <h3>Menu cèpes et foie gras</h3>
+
+                <p>Venez découvrir un plat concocté par nos soins. <span class="menu_content">Au menu cèpes grillées, foie gras, persil et oeuf paprica.</span></p>
+                <a href="#commanderC">Commander</a>
+           
+                </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Commander</h1>
+
+                <div class="card-container">
+                    <div class="card" id="commanderS">
+
+                        <div class="card-header">
+                            <img src="images/st_jacques.jpg">
+                            <button onclick="panier.addItemToCart(Items[2])">+</button>
+                        </div>
+
+                        <div class="card-controller">
+                            <h3>Menu St Jacques</h3>
+                            <p>19.50€</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card" id="commanderP">
+
+                        <div class="card-header">
+                            <img src="images/dos_de_lieu_jaune_asperge_quinoa_souffle.jpg">
+                            <button onclick="panier.addItemToCart(Items[3])">+</button>
+                        </div>
+
+                        <div class="card-controller">
+                            <h3>Menu poisson et aspèrges</h3>
+                            <p>17.85€</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            <img src="images/truffes-chocolat.jpg">
+                            <button onclick="panier.addItemToCart(Items[4])">+</button>
+                        </div>
+
+                        <div class="card-controller">
+                            <h3>Truffes au chocolat</h3>
+                            <p>12.25€</p>
+                            <i>Vendu à l'unité</i>
+                        </div>
+
+                    </div>
+                    <div class="card" id="commanderC">
+                        <div class="card-header">
+                            <img src="images/cepes_foie_gars.jpg">
+                            <button onclick="panier.addItemToCart(Items[5])">+</button>
+                        </div>
+
+                        <div class="card-controller">
+                            <h3>Menu cèpes</h3>
+                            <p>25.00€</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+
+                        <div class="card-header">
+                            <img src="images/vin.jpg">
+                            <button onclick="panier.addItemToCart(Items[0])">+</button>
+                        </div>
+
+                        <div class="card-controller">
+                            <h3>Vin rouge</h3>
+                            <p>25.99€</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            <img src="images/vodka.jpg">
+                            <button onclick="panier.addItemToCart(Items[1])">+</button>
+                        </div>
+
+                        <div class="card-controller">
+                            <h3>Vodka</h3>
+                            <p>11.99€</p>
+                            <i>Vendu au verre</i>
+                        </div>
+
+                    </div>
+
+                    
+                    
+                </div>
+            
+            
+        </section>
+
+        <!-- <div class="success">
+            <p>Votre plat a été ajouté avec succès !</p>
+        </div> -->
+</body>
+</html>
