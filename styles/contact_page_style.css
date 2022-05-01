@@ -81,7 +81,25 @@ img.fond {
     .form-container {
         width : 100%;
     }
+  img.fond {
+    display : none;
+  }
+  .content {
+    width : 100%;
+    margin-top : 100px;
+    position : static;
+    left : 0;
+  }
     .container {
-        width : 90%;
+        max-width : 100%;
+        width : 100%;
+        position : static;
+        left : 0;
+        display : block;
     }
+  .container .form-container {
+    max-width : 100%;
+    width : 95%;
+    margin : 0 auto;
+  }
 }
